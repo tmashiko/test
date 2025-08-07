@@ -117,5 +117,38 @@
             <p>&copy; 2025 YOUR NAME. All Rights Reserved.</p>
         </div>
     </footer>
+    <script>
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('.main-header');
+            if (window.scrollY > 50) { // 50pxスクロールしたらヘッダーを縮小
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                const headerOffset = document.querySelector('.main-header').offsetHeight; // 現在のヘッダーの高さを取得
+
+                // スクロール前にヘッダーを縮小するクラスを強制的に適用
+                const header = document.querySelector('.main-header');
+                header.classList.add('scrolled');
+
+                // 少し遅延させてからスクロールを実行し、ヘッダーの高さが適用されるのを待つ
+                setTimeout(() => {
+                    const elementPosition = targetElement.getBoundingClientRect().top + window.scrollY;
+                    window.scrollTo({
+                        top: elementPosition - headerOffset, // ヘッダーの高さ分を引く
+                        behavior: 'smooth'
+                    });
+                }, 100); // 100msの遅延
+            });
+        });
+    </script>
 </body>
 </html>
