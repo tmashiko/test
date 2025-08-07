@@ -410,7 +410,7 @@ html {
 
 @media (max-width: 768px) {
     html {
-        scroll-padding-top: 100px; /* Adjust for mobile scrolled header */
+        scroll-padding-top: 120px; /* Adjust for mobile scrolled header */
     }
 
     .main-header {
@@ -463,7 +463,7 @@ html {
 
 @media (max-width: 480px) {
     html {
-        scroll-padding-top: 80px; /* Adjust for very small screens scrolled header */
+        scroll-padding-top: 100px; /* Adjust for very small screens scrolled header */
     }
 
     .main-header {
