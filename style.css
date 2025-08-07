@@ -481,7 +481,7 @@ p {
 
 @media (max-width: 768px) {
     .main-header {
-        padding: 15px 0; /* Reduce header padding */
+        padding: 10px 0; /* Reduce header padding even more */
     }
 
     .main-header .container {
@@ -489,17 +489,17 @@ p {
     }
 
     .main-nav ul {
-        margin-top: 15px; /* Adjust margin */
+        margin-top: 10px; /* Adjust margin */
         flex-wrap: wrap;
         justify-content: center;
     }
 
     .main-nav ul li {
-        margin: 0 12px 8px; /* Further reduce margin */
+        margin: 0 10px 5px; /* Further reduce margin */
     }
 
     .hero-section {
-        padding-top: 120px; /* Adjust for potentially taller header on mobile */
+        padding-top: 180px; /* Ensure enough space for header */
     }
 
     .hero-title {
@@ -526,19 +526,19 @@ p {
 
 @media (max-width: 480px) {
     .main-header {
-        padding: 10px 0; /* Further reduce header padding */
+        padding: 5px 0; /* Further reduce header padding */
     }
 
     .main-nav ul {
-        margin-top: 10px;
+        margin-top: 8px;
     }
 
     .main-nav ul li {
-        margin: 0 8px 5px;
+        margin: 0 6px 3px;
     }
 
     .hero-section {
-        padding-top: 100px; /* Further adjust for very small screens */
+        padding-top: 160px; /* Ensure enough space for header on very small screens */
     }
 
     .hero-title {
