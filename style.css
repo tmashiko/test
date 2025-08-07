@@ -499,7 +499,7 @@ p {
     }
 
     .hero-section {
-        padding-top: 180px; /* Ensure enough space for header */
+        padding-top: 220px; /* Ensure enough space for header */
     }
 
     .hero-title {
@@ -526,7 +526,7 @@ p {
 
 @media (max-width: 480px) {
     .main-header {
-        padding: 5px 0; /* Further reduce header padding */
+        padding: 3px 0; /* Further reduce header padding */
     }
 
     .main-nav ul {
@@ -538,7 +538,7 @@ p {
     }
 
     .hero-section {
-        padding-top: 160px; /* Ensure enough space for header on very small screens */
+        padding-top: 200px; /* Ensure enough space for header on very small screens */
     }
 
     .hero-title {
